@@ -15,18 +15,15 @@
 <div class="container my-5">
     <h1>Hello, world!</h1>
     <div class="row">
-        <div class="col-md-3">
-            <?php
-            foreach($products as $product){
-                echo "<strong>{$product->name}</strong> - {$product->description}";
-            }
-            ?>
 
-            <hr>
-            <p>
-                <a href="">Ver pdf</a>
-            </p>
-        </div>
+            <?php
+            foreach($products as $product):?>
+                <div class="col-md-3">
+                    <strong><?= $product->name;?></strong> -
+                    <span><?= $product->description;?></span>
+                </div>
+            <?php endforeach;?>
+
     </div>
 </div>
 <!-- Optional JavaScript -->
