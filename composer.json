@@ -3,8 +3,8 @@
     "description": "A basic psr4 autoload",
     "type": "yes",
     "require": {
-        "illuminate/database": "5.7",
-        "dompdf/dompdf": "dev-master"
+        "illuminate/database": "5.7"
+
     },
     "autoload": {
         "psr-4": {
